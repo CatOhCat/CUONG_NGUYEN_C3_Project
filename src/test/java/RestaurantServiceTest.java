@@ -40,7 +40,7 @@ class RestaurantServiceTest {
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //>>>>>>>>>>>>>>>>>>>>>>CALCULATE TOTAL MENU PRICE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-    // TDD: Failed Test Case
+    // TDD: Passing Test Case
     @Test
     public void order_value_returned_must_equals_388 () {
         List<Item> items = restaurant.getMenu();

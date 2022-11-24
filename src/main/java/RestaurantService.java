@@ -33,6 +33,10 @@ public class RestaurantService {
 
     // TDD method that returns the order value
     public int getOrderValue(List<Item> selectedMenu) {
-        return 0;
+        int totalValue = 0;
+        for (Item bI:selectedMenu) {
+            totalValue += bI.getPrice();
+        }
+        return totalValue;
     }
 }
