@@ -32,7 +32,7 @@ public class RestaurantService {
     }
 
     // TDD method that returns the order value
-    public Double getOrderValue(List<Item> selectedMenu) {
-        return 0.0;
+    public int getOrderValue(List<Item> selectedMenu) {
+        return 0;
     }
 }

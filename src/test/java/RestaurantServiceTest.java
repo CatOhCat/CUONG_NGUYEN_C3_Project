@@ -42,7 +42,7 @@ class RestaurantServiceTest {
     //>>>>>>>>>>>>>>>>>>>>>>CALCULATE TOTAL MENU PRICE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     // TDD: Failed Test Case
     @Test
-    public void order_value_returned_equals_388 () {
+    public void order_value_returned_must_equals_388 () {
         List<Item> items = restaurant.getMenu();
         assertEquals(388, service.getOrderValue(items));
     }
