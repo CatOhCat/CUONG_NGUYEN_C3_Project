@@ -15,7 +15,6 @@ public class RestaurantService {
         return  null;
     }
 
-
     public Restaurant addRestaurant(String name, String location, LocalTime openingTime, LocalTime closingTime) {
         Restaurant newRestaurant = new Restaurant(name, location, openingTime, closingTime);
         restaurants.add(newRestaurant);
@@ -30,5 +29,10 @@ public class RestaurantService {
 
     public List<Restaurant> getRestaurants() {
         return restaurants;
+    }
+
+    // TDD method that returns the order value
+    public Double getOrderValue(List<Item> selectedMenu) {
+        return 0.0;
     }
 }

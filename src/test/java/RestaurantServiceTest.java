@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.*;
 
+import java.security.PublicKey;
 import java.time.LocalTime;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -37,8 +39,15 @@ class RestaurantServiceTest {
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //>>>>>>>>>>>>>>>>>>>>>>CALCULATE TOTAL MENU PRICE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    // TDD: Failed Test Case
+    @Test
+    public void order_value_returned_equals_388 () {
+        List<Item> items = restaurant.getMenu();
+        assertEquals(388, service.getOrderValue(items));
+    }
 
-
+    //<<<<<<<<<<<<<<<<<<<<CALCULATE TOTAL MENU PRICE>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //>>>>>>>>>>>>>>>>>>>>>>ADMIN: ADDING & REMOVING RESTAURANTS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     @Test
